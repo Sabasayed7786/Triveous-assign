@@ -1,0 +1,127 @@
+
+
+/* Home.module.css */
+
+.mainContainer {
+    background-image: url("homeimage.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .welcomeMessage {
+    font-size: 18px;
+  }
+  
+  .logoutButton {
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .logoutButton:hover {
+    background-color: rgb(87, 69, 47);
+  }
+  
+  .introSection {
+    text-align: center;
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .mainTitle {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subTitle {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Adjust this to your preference */
+  }
+  
+  .homeInnerBox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loginButton,
+  .signupButton {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    border: solid burlywood;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .loginButton:hover,
+  .signupButton:hover {
+    background-color: burlywood;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+    .homeInnerBox {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .loginButton,
+    .signupButton {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .homeInnerBox {
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .loginButton,
+    .signupButton {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  

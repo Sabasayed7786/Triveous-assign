@@ -1,0 +1,92 @@
+/* NewsGrid.module.css */
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .griditem {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .griditem img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .griditem h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .griditem p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .griditem button {
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .griditem button:hover {
+    background-color: rgb(87, 69, 47);
+  }
+  
+  .griditem a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+    .gridcontainer {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gridcontainer {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .griditem {
+      padding: 16px;
+    }
+  
+    .griditem h3 {
+      font-size: 18px;
+    }
+  
+    .griditem p {
+      font-size: 14px;
+    }
+  
+    .griditem button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .griditem a {
+      font-size: 14px;
+    }
+  }
+  
